@@ -52,6 +52,14 @@ export default function MarketingPortfolio() {
     }
   };
 
+  const scrollToInquiry = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.getElementById('inquiry');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
@@ -69,7 +77,7 @@ export default function MarketingPortfolio() {
       <div className="bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 py-2.5 px-4 text-center text-sm font-bold flex items-center justify-center gap-2 shadow-md relative z-50">
         <Star className="w-4 h-4 fill-slate-900" />
         <span>Limited Time: Free 30-Minute Financial Audit for First-Time Clients!</span>
-        <a href="#inquiry" className="underline decoration-slate-900/40 hover:decoration-slate-900 transition-colors ml-2 hidden sm:inline">Claim Yours →</a>
+        <a href="#inquiry" onClick={scrollToInquiry} className="underline decoration-slate-900/40 hover:decoration-slate-900 transition-colors ml-2 hidden sm:inline">Claim Yours →</a>
       </div>
 
       {/* ── BRANDING NAV BAR ── */}
@@ -79,7 +87,7 @@ export default function MarketingPortfolio() {
             <Building2 className="w-6 h-6 text-amber-500" />
             <span className="text-xl font-bold text-white tracking-tight font-serif italic">WealthBridge Advisory</span>
           </div>
-          <a href="#inquiry" className="hidden sm:inline-flex px-6 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium rounded-full backdrop-blur-md transition-all">
+          <a href="#inquiry" onClick={scrollToInquiry} className="hidden sm:inline-flex px-6 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium rounded-full backdrop-blur-md transition-all">
             Contact Us
           </a>
         </div>
@@ -115,13 +123,13 @@ export default function MarketingPortfolio() {
             </motion.p>
             
             <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-              <a href="#inquiry" className="w-full sm:w-auto px-8 py-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-lg rounded-xl transition-all shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 hover:-translate-y-1 flex items-center justify-center gap-2">
+              <a href="#inquiry" onClick={scrollToInquiry} className="w-full sm:w-auto px-8 py-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-lg rounded-xl transition-all shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 hover:-translate-y-1 flex items-center justify-center gap-2">
                 Start Your Journey
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <div className="text-sm text-slate-400 font-medium flex items-center gap-2 px-4 py-2">
+              <a onClick={scrollToInquiry} href="#inquiry" className="text-amber-400 font-bold hover:text-amber-300 flex items-center gap-1 group mt-auto cursor-pointer">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Response within 24h
-              </div>
+              </a>
             </motion.div>
             
             {/* Social Proof Bar */}
