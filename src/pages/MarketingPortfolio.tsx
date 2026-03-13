@@ -84,7 +84,7 @@ export default function MarketingPortfolio() {
       <nav className="absolute top-10 left-0 w-full z-50 px-6 lg:px-12 flex justify-between items-center">
         <div className="flex justify-between items-center w-full max-w-7xl mx-auto">
           <div className="flex items-center gap-3 border border-slate-700/50 bg-slate-900/40 backdrop-blur-md px-5 py-2.5 rounded-full shadow-xl">
-            <Building2 className="w-6 h-6 text-amber-500" />
+            <img src="/src/assets/logo.png" alt="WealthBridge Advisory" className="h-8 w-auto object-contain" />
             <span className="text-xl font-bold text-white tracking-tight font-serif italic">WealthBridge Advisory</span>
           </div>
           <a href="#inquiry" onClick={scrollToInquiry} className="hidden sm:inline-flex px-6 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium rounded-full backdrop-blur-md transition-all">
@@ -154,14 +154,13 @@ export default function MarketingPortfolio() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, scale: 0.9, rotate: 2 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: 0.8 }} className="lg:w-2/5 w-full max-w-md relative">
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-slate-800 relative shadow-2xl ring-1 ring-white/10 group cursor-pointer border-4 border-slate-700/50">
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400 bg-gradient-to-br from-slate-800 to-slate-900 transition-transform duration-700 group-hover:scale-105">
-                <User className="w-32 h-32 mb-6 text-slate-700 relative z-0" />
-                <div className="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors z-10"></div>
-                <PlayCircle className="w-16 h-16 text-white/90 drop-shadow-xl z-20 group-hover:scale-110 transition-transform" />
-                <p className="z-20 mt-4 font-bold text-white tracking-wide uppercase text-sm drop-shadow-md">Click to Upload Profile Photo</p>
-                <div className="absolute inset-4 border-2 border-dashed border-amber-500/30 rounded-2xl z-0"></div>
-              </div>
+            <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-slate-900 relative shadow-2xl ring-1 ring-white/10 group border-4 border-slate-700/50 flex items-center justify-center p-8">
+              <img 
+                src="/src/assets/logo.png" 
+                alt="WealthBridge Advisory Logo" 
+                className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-4 border-2 border-dashed border-amber-500/20 rounded-2xl pointer-events-none"></div>
             </div>
             
             {/* Floating Trust Element */}
@@ -197,10 +196,16 @@ export default function MarketingPortfolio() {
                 <div className="text-5xl font-serif text-slate-200 font-light tracking-tighter">01</div>
               </div>
               <h3 className="text-2xl font-black text-slate-900 mb-4 font-serif">Investment Management</h3>
-              <p className="text-slate-600 mb-8 leading-relaxed">Maximize your wealth with data-driven strategies and personalized portfolio management.</p>
+              <p className="text-slate-600 mb-8 leading-relaxed">We have multiple options as per client’s investor perspective.</p>
               
               <ul className="space-y-3 mb-8">
-                {["Mutual Funds — SIP & Lumpsum", "Stocks & Equity Markets", "Demat Account Management", "Fixed Deposits", "Pre-Owned Policy Investment"].map((item, i) => (
+                {[
+                  "Mutual fund investment – SIP & LUMPSUM", 
+                  "Corporate FD & bonds", 
+                  "ULIP", 
+                  "Demat account set up & management", 
+                  "Pre-Owned Insurance policy investment"
+                ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
                     <CheckCircle2 className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" /> {item}
                   </li>
@@ -242,10 +247,10 @@ export default function MarketingPortfolio() {
                 <div className="text-5xl font-serif text-slate-200 font-light tracking-tighter">03</div>
               </div>
               <h3 className="text-2xl font-black text-slate-900 mb-4 font-serif">Loan & Funding Solutions</h3>
-              <p className="text-slate-600 mb-8 leading-relaxed">Flexible financing to fuel personal milestones and business growth.</p>
+              <p className="text-slate-600 mb-8 leading-relaxed">Mention Pan India - Flexible financing to fuel personal milestones and business growth.</p>
               
               <ul className="space-y-3 mb-8">
-                {["School & Education Funding", "Home, Car & Personal Loans", "Business & Commercial Loans", "Mortgage (LAP, LRD, NRI)"].map((item, i) => (
+                {["Project loans, Equipment loans", "Machinery Loan", "School & Education Funding", "Home, Car & Personal Loans", "Business & Commercial Loans", "Mortgage (LAP, LRD, NRI)"].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
                     <CheckCircle2 className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" /> {item}
                   </li>
@@ -425,11 +430,11 @@ export default function MarketingPortfolio() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6 relative z-10">
           <div className="flex flex-col items-center md:items-start text-center md:text-left gap-1">
             <div className="font-serif italic text-xl font-bold text-amber-500 flex items-center gap-2">
-              <Building2 className="w-5 h-5" /> WealthBridge Advisory
+              <img src="/src/assets/logo.png" alt="" className="h-6 w-auto object-contain" /> WealthBridge Advisory
             </div>
             <div className="text-xs uppercase tracking-widest font-bold text-slate-500 ml-1">Invest Smart • Grow Secure</div>
           </div>
-          <p className="text-sm font-medium">© {new Date().getFullYear()} WealthBridge Advisory. <br className="md:hidden"/> Ahmedabad, Gujarat.</p>
+          <p className="text-sm font-medium">{new Date().getFullYear()} WealthBridge Advisory. <br className="md:hidden"/> Ahmedabad, Gujarat.</p>
         </div>
       </footer>
 
