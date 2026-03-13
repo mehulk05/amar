@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { 
   Building2, ShieldCheck, TrendingUp, 
   MapPin, Phone, Mail, User, CheckCircle2, 
-  ArrowRight, Shield, Landmark, Star, PlayCircle,
+  ArrowRight, Shield, Landmark, Star,
   Award, Clock, Target, Globe, Key
 } from 'lucide-react';
 
