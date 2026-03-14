@@ -6,6 +6,7 @@ import {
   ArrowRight, Shield, Landmark, Star,
   Award, Clock, Target, Globe, Key
 } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 export default function MarketingPortfolio() {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '', service: '' });
@@ -73,18 +74,12 @@ export default function MarketingPortfolio() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans selection:bg-amber-500 selection:text-slate-900 overflow-x-hidden">
       
-      {/* ── HIGH CONVERSION URGENCY BAR ── */}
-      <div className="bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 py-2.5 px-4 text-center text-sm font-bold flex items-center justify-center gap-2 shadow-md relative z-50">
-        <Star className="w-4 h-4 fill-slate-900" />
-        <span>Limited Time: Free 30-Minute Financial Audit for First-Time Clients!</span>
-        <a href="#inquiry" onClick={scrollToInquiry} className="underline decoration-slate-900/40 hover:decoration-slate-900 transition-colors ml-2 hidden sm:inline">Claim Yours →</a>
-      </div>
 
       {/* ── BRANDING NAV BAR ── */}
       <nav className="absolute top-10 left-0 w-full z-50 px-6 lg:px-12 flex justify-between items-center">
         <div className="flex justify-between items-center w-full max-w-7xl mx-auto">
           <div className="flex items-center gap-3 border border-slate-700/50 bg-slate-900/40 backdrop-blur-md px-5 py-2.5 rounded-full shadow-xl">
-            <img src="/src/assets/logo.png" alt="WealthBridge Advisory" className="h-8 w-auto object-contain" />
+            <img src={logo} alt="WealthBridge Advisory" className="h-8 w-auto object-contain" />
             <span className="text-xl font-bold text-white tracking-tight font-serif italic">WealthBridge Advisory</span>
           </div>
           <a href="#inquiry" onClick={scrollToInquiry} className="hidden sm:inline-flex px-6 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium rounded-full backdrop-blur-md transition-all">
@@ -156,7 +151,7 @@ export default function MarketingPortfolio() {
           <motion.div initial={{ opacity: 0, scale: 0.9, rotate: 2 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: 0.8 }} className="lg:w-2/5 w-full max-w-md relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-slate-900 relative shadow-2xl ring-1 ring-white/10 group border-4 border-slate-700/50 flex items-center justify-center p-8">
               <img 
-                src="/src/assets/logo.png" 
+                src={logo} 
                 alt="WealthBridge Advisory Logo" 
                 className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
               />
@@ -247,7 +242,7 @@ export default function MarketingPortfolio() {
                 <div className="text-5xl font-serif text-slate-200 font-light tracking-tighter">03</div>
               </div>
               <h3 className="text-2xl font-black text-slate-900 mb-4 font-serif">Loan & Funding Solutions</h3>
-              <p className="text-slate-600 mb-8 leading-relaxed">Mention Pan India - Flexible financing to fuel personal milestones and business growth.</p>
+              <p className="text-slate-600 mb-8 leading-relaxed">Pan India - Flexible financing to fuel personal milestones and business growth.</p>
               
               <ul className="space-y-3 mb-8">
                 {["Project loans, Equipment loans", "Machinery Loan", "School & Education Funding", "Home, Car & Personal Loans", "Business & Commercial Loans", "Mortgage (LAP, LRD, NRI)"].map((item, i) => (
@@ -430,7 +425,7 @@ export default function MarketingPortfolio() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6 relative z-10">
           <div className="flex flex-col items-center md:items-start text-center md:text-left gap-1">
             <div className="font-serif italic text-xl font-bold text-amber-500 flex items-center gap-2">
-              <img src="/src/assets/logo.png" alt="" className="h-6 w-auto object-contain" /> WealthBridge Advisory
+              <img src={logo} alt="" className="h-6 w-auto object-contain" /> WealthBridge Advisory
             </div>
             <div className="text-xs uppercase tracking-widest font-bold text-slate-500 ml-1">Invest Smart • Grow Secure</div>
           </div>
