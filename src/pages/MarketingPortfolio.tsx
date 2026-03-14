@@ -242,7 +242,7 @@ export default function MarketingPortfolio() {
                 <div className="text-5xl font-serif text-slate-200 font-light tracking-tighter">03</div>
               </div>
               <h3 className="text-2xl font-black text-slate-900 mb-4 font-serif">Loan & Funding Solutions</h3>
-              <p className="text-slate-600 mb-8 leading-relaxed">Pan India - Flexible financing to fuel personal milestones and business growth.</p>
+              <p className="text-slate-600 mb-8 leading-relaxed">We offer Pan India - Flexible financing to fuel personal milestones and business growth.</p>
               
               <ul className="space-y-3 mb-8">
                 {["Project loans, Equipment loans", "Machinery Loan", "School & Education Funding", "Home, Car & Personal Loans", "Business & Commercial Loans", "Mortgage (LAP, LRD, NRI)"].map((item, i) => (
