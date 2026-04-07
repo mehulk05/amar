@@ -313,7 +313,7 @@ export default function MarketingPortfolio() {
           <div className="bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-slate-200 flex flex-col md:flex-row ring-1 ring-slate-900/5">
             
             {/* Form Left Info */}
-            <div className="md:w-5/12 bg-slate-900 p-10 lg:p-12 text-white flex flex-col justify-between relative overflow-hidden">
+            <div className="md:w-5/12 bg-slate-900 p-10 lg:p-8 text-white flex flex-col justify-between relative overflow-hidden">
               <div className="absolute top-0 right-0 p-8 opacity-5"><Building2 className="w-48 h-48" /></div>
               <div className="relative z-10">
                 <h3 className="text-2xl font-black mb-8 font-serif">Contact Information</h3>
@@ -323,28 +323,28 @@ export default function MarketingPortfolio() {
                     <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center shrink-0 mt-1"><User className="w-5 h-5 text-amber-400" /></div>
                     <div>
                       <div className="text-xs text-amber-500 font-bold uppercase tracking-wider mb-1">Advisor</div>
-                      <div className="font-semibold text-lg tracking-wide">Sambhvani Amarkumar</div>
+                      <div className="font-semibold text-md tracking-wide">Sambhvani Amarkumar</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center shrink-0 mt-1"><Phone className="w-5 h-5 text-amber-400" /></div>
                     <div>
                       <div className="text-xs text-amber-500 font-bold uppercase tracking-wider mb-1">Phone</div>
-                      <div className="font-semibold text-lg tracking-wide">+91 78638 31851</div>
+                      <div className="font-semibold text-md tracking-wide">+91 78638 31851</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center shrink-0 mt-1"><Mail className="w-5 h-5 text-amber-400" /></div>
                     <div>
                       <div className="text-xs text-amber-500 font-bold uppercase tracking-wider mb-1">Email</div>
-                      <div className="font-semibold text-lg tracking-wide">wealthbridgeadvisory5@gmail.com</div>
+                      <div className="font-semibold text-md tracking-wide">wealthbridgeadvisory5@gmail.com</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center shrink-0 mt-1"><MapPin className="w-5 h-5 text-amber-400" /></div>
                     <div>
                       <div className="text-xs text-amber-500 font-bold uppercase tracking-wider mb-1">Location</div>
-                      <div className="font-semibold text-lg tracking-wide">Ahmedabad, Gujarat</div>
+                      <div className="font-semibold text-md tracking-wide">Ahmedabad, Gujarat</div>
                     </div>
                   </div>
                 </div>
