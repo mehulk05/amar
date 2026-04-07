@@ -330,14 +330,14 @@ export default function MarketingPortfolio() {
                     <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center shrink-0 mt-1"><Phone className="w-5 h-5 text-amber-400" /></div>
                     <div>
                       <div className="text-xs text-amber-500 font-bold uppercase tracking-wider mb-1">Phone</div>
-                      <div className="font-semibold text-lg tracking-wide">+91 96645 94861</div>
+                      <div className="font-semibold text-lg tracking-wide">+91 78638 31851</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center shrink-0 mt-1"><Mail className="w-5 h-5 text-amber-400" /></div>
                     <div>
                       <div className="text-xs text-amber-500 font-bold uppercase tracking-wider mb-1">Email</div>
-                      <div className="font-semibold text-lg tracking-wide">amar.sam2020@gmail.com</div>
+                      <div className="font-semibold text-lg tracking-wide">wealthbridgeadvisory5@gmail.com</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">

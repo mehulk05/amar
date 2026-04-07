@@ -319,14 +319,14 @@ function App() {
                     <Phone className="w-6 h-6 text-blue-300 shrink-0" />
                     <div>
                       <p className="text-sm text-blue-200 uppercase tracking-wider font-semibold">Phone</p>
-                      <p className="font-medium text-lg">+91 96645 94861</p>
+                      <p className="font-medium text-lg">+91 78638 31851</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <Mail className="w-6 h-6 text-blue-300 shrink-0" />
                     <div>
                       <p className="text-sm text-blue-200 uppercase tracking-wider font-semibold">Email</p>
-                      <p className="font-medium text-lg">amar.sam2020@gmail.com</p>
+                      <p className="font-medium text-lg">wealthbridgeadvisory5@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
